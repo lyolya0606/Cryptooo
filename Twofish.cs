@@ -1,7 +1,4 @@
-﻿//using Org.BouncyCastle.Crypto.Parameters;
-//using Org.BouncyCastle.Crypto;
-//using Org.BouncyCastle.Utilities;
-using System;
+﻿using System;
 
 
 namespace Cryptooo {
@@ -259,7 +256,7 @@ namespace Cryptooo {
             //throw new ArgumentException("invalid parameter passed to Twofish init - " + Platform.GetTypeName(parameters));
 
             this.encrypting = forEncryption;
-            this.workingKey = key; //todo
+            this.workingKey = key; 
 
             int keyBits = this.workingKey.Length * 8;
             switch (keyBits) {
